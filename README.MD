@@ -308,4 +308,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgements
 
-This implementation is based on the research paper "Distributed Agricultural Monitoring Using BigchainDB" by Željko Džafić, Branko Milosavljević, Mladen Čučak, and Slobodanka Pavlović.
+This implementation is based on the research paper "Distributed Agricultural Monitoring Using BigchainDB"
