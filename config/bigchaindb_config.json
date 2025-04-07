@@ -1,0 +1,36 @@
+{
+    "general": {
+      "simulation_name": "farm-123",
+      "location": {
+        "latitude": 45.2671,
+        "longitude": 19.8335
+      },
+      "log_level": "info"
+    },
+    "transmission": {
+      "method": "bigchaindb",
+      "url": "http://localhost:9984",
+      "public_key": "YOUR_PUBLIC_KEY",
+      "private_key": "YOUR_PRIVATE_KEY",
+      "network": {
+        "packet_loss": 0.01,
+        "latency_mean": 100,
+        "latency_stddev": 30
+      }
+    },
+    "sensors": [
+      {
+        "id": "moisture-1",
+        "type": "soil_moisture",
+        "name": "Soil Moisture Sensor",
+        "field_id": "field-1",
+        "unit": "percent",
+        "min_value": 0,
+        "max_value": 100,
+        "interval": 600,
+        "noise": 0.5,
+        "drying_rate": 0.05
+      }
+    ]
+  }
+  

@@ -1,0 +1,41 @@
+{
+    "general": {
+      "simulation_name": "farm-123",
+      "location": {
+        "latitude": 45.2671,
+        "longitude": 19.8335
+      },
+      "log_level": "info"
+    },
+    "transmission": {
+      "method": "mqtt",
+      "broker": "localhost",
+      "port": 1883,
+      "topic_prefix": "farm/sensors",
+      "client_id": "farm-123-simulator",
+      "qos": 1,
+      "username": "",
+      "password": "",
+      "network": {
+        "packet_loss": 0.01,
+        "latency_mean": 100,
+        "latency_stddev": 30
+      }
+    },
+    "sensors": [
+      {
+        "id": "temp-1",
+        "type": "temperature",
+        "name": "Temperature Sensor",
+        "field_id": "field-1",
+        "unit": "celsius",
+        "min_value": -10,
+        "max_value": 40,
+        "interval": 300,
+        "noise": 0.2,
+        "daily_variation": true,
+        "seasonal_variation": true
+      }
+    ]
+  }
+  

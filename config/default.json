@@ -1,0 +1,78 @@
+{
+    "general": {
+      "simulation_name": "farm-123",
+      "location": {
+        "latitude": 45.2671,
+        "longitude": 19.8335
+      },
+      "log_level": "info"
+    },
+    "transmission": {
+      "method": "http",
+      "endpoint": "http://localhost:5000/data",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "timeout": 5,
+      "retry_count": 3,
+      "network": {
+        "packet_loss": 0.01,
+        "latency_mean": 100,
+        "latency_stddev": 30
+      }
+    },
+    "sensors": [
+      {
+        "id": "temp001",
+        "type": "temperature",
+        "name": "Temperature Sensor 1",
+        "field_id": "field-1",
+        "unit": "celsius",
+        "min_value": -10,
+        "max_value": 40,
+        "interval": 300,
+        "noise": 0.2,
+        "daily_variation": true,
+        "seasonal_variation": true
+      },
+      {
+        "id": "moisture001",
+        "type": "soil_moisture",
+        "name": "Soil Moisture Sensor 1",
+        "field_id": "field-1",
+        "unit": "percent",
+        "min_value": 0,
+        "max_value": 100,
+        "interval": 600,
+        "noise": 0.5,
+        "drying_rate": 0.05,
+        "rainfall_events": true
+      },
+      {
+        "id": "humid001",
+        "type": "humidity",
+        "name": "Humidity Sensor 1",
+        "field_id": "field-1",
+        "unit": "percent",
+        "min_value": 20,
+        "max_value": 95,
+        "interval": 300,
+        "noise": 0.3,
+        "daily_variation": true,
+        "inverse_temp_correlation": true
+      },
+      {
+        "id": "light001",
+        "type": "light",
+        "name": "Light Sensor 1",
+        "field_id": "field-1",
+        "unit": "lux",
+        "min_value": 0,
+        "max_value": 100000,
+        "interval": 300,
+        "noise": 0.1,
+        "daily_variation": true
+      }
+    ]
+  }
+  

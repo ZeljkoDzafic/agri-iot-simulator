@@ -1,0 +1,41 @@
+# Python virtual environment
+venv/
+.venv/
+env/
+.env/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log
+agricultural_simulator.log
+
+# Configuration backups
+*.json.bak
+
+# Data output files
+*.csv
+*.txt
+
+# IDE-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*~
+*.swp
+*.swo
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/

@@ -60,7 +60,7 @@ python simulator.py
 Create a custom configuration file:
 
 ```bash
-cp config/default.json config/my_config.json
+cp config/default.json config/config.json
 ```
 
 Edit `my_config.json` to adjust:
